@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>brewery cafe Menu & Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:lightcyan;
+        }
+header {
+            background: teal;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+}	
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration:thistle;
+ }
+
+        .menu-section, .reservation-section, .location-section, .reviews-section {
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .menu-item {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .menu-item p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .menu-item {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .reservation-form input, .reservation-form select, .reservation-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .reservation-form button {
+            background-color: #f57c00;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reservation-form button:hover {
+            background-color: #f39c12;
+        }
+
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 400px;
+        }
+
+        .testimonials-section {
+            background-color: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .testimonial {
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .testimonial h3 {
+            font-size: 1.4em;
+            margin-top: 10px;
+            color: red;
+        }
+
+        .testimonial p {
+            font-size: 1.2em;
+            color: red;
+        }
+ </style>
+</head>
+<body>
+
+    <img src="brewery.jpeg"height="250px"width="300px">
+    <img src="new.jpeg"height="250px"width="300px">
+    <img src="s.jpeg."height="250px"width="300px">
+    <img src="b.jpeg"height="250px"width="300px">
+    <img src="p.jpeg."height="250px"width="350px">
+<header>
+    <h1>Brewery Cafe</h1>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservations</a>
+        <a href="#location">Location</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+</header>
+
+<section class="menu-section" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+        <img src="dish1.jpeg" alt="Dish 1">
+        <h3>South indian Combo meal</h3>
+        <p>₹500</p>
+    </div>
+    <div class="menu-item">
+        <img src="pasta.jpeg" alt="Dish 2">
+        <h3>Creamy Tomato and Spinach Pasta</h3>
+        <p>₹450</p>
+    </div>
+    <div class="menu-item">
+        <img src="dish3.jpeg" alt="Dish 3">
+        <h3>Caesar Salad</h3>
+        <p>₹600</p>
+    </div>
+    <div class="menu-item">
+        <img src="dish4.jpeg" alt="Dish 4">
+        <h3>Italian grinder sandwich</h3>
+        <p>₹350</p>
+    </div>
+    <div>
+    <div class="menu-item">
+        <img src="menu.jpeg" alt="Dish 4">
+        <h3>All Food itmes</h3>
+    </div>
+</section>
+
+<section class="reservation-section" id="reservation">
+    <h2>Reserve a Table</h2>
+    <form class="reservation-form" action="/submit-reservation" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+ <input type="email" name="email" placeholder="Your Email" required>
+<input type="tel" name="phone" placeholder="Your Phone" required>
+<input type="date" name="date" required>
+ <input type="time" name="time" required>
+<select name="party_size" required>
+     <option value="">Select Party Size</option>
+     <option value="1-2">1-2 people</option>
+     <option value="3-4">3-4 people</option>
+     <option value="5-6">5-6 people</option>
+     <option value="7+">7+ people</option>
+</select>
+  <textarea name="special_request" placeholder="Special Requests"></textarea>
+  <button type="submit">Book NoW</button>
+</form>
+</section>
+<section class="location-section" id="location">
+ <h2>Our Location</h2>
+ <p>The Distillery R1, Museum Square, Alembic City, Gujarat 390003</p>
+<a href="https://www.google.com/maps/place/The+Brewery./@22.3250471,73.1716354,17z/data=!3m1!4b1!4m6!3m5!1s0x395fc8c6e6ca1049:0xc180463284dabffd!8m2!3d22.3250471!4d73.1716354!16s%2Fg%2F11lh5p52wf?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D" target="_blank">View Location on Google Maps</a>
+
+</section>
+<section class="reviews section" id="reviews">
+ <h2>Customer Reviews ⭐⭐⭐⭐⭐</h2>
+    <div class="testimonial">
+ <p>"Absolutely loved the food! The scrambled pasta were perfect, and the ambiance was cozy. Will definitely come back again!"</p>
+  <h3>- Sarah K.</h3>
+</div>
+ <div class="testimonial">
+ <p>"The grilled Italian sandwich was delicious, and the staff were super friendly. Highly recommend this place!"</p>
+  <h3>- Michael L.</h3>
+</div>
+ <div class="testimonial">
+  <p>"Best pasta I've had in a long time! Loved the fresh ingredients and the service was top-notch."</p>
+ <h3>- Emma W.</h3>
+</div>
+</section>
+<img src="brewarry.jpeg">
+<footer>
+<p>&copy; 2025 [Brewery Cafe]. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
